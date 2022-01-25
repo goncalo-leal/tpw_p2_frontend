@@ -20,7 +20,7 @@ const httpOptions = {
 })
 export class PublicationService {
 
-  private baseUrl = "http://zer0sense2.pythonanywhere.com/ws/";
+  private baseUrl = "https://zer0sense2.pythonanywhere.com/ws/";
   private user: User = new User;
   private status: Publication_Status = new Publication_Status;
 

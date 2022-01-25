@@ -12,7 +12,7 @@ const httpOptions = {
   providedIn: 'root'
 })
 export class PubStatusService {
-  private baseUrl = "http://zer0sense2.pythonanywhere.com/ws/";
+  private baseUrl = "https://zer0sense2.pythonanywhere.com/ws/";
   constructor(private http: HttpClient) { }
   getStatus(): Observable<Publication_Status[]> {
     return this.http.get<Publication_Status[]>(this.baseUrl + 'pubstatusgetALl');

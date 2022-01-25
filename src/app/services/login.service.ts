@@ -6,7 +6,7 @@ import { Subject } from 'rxjs';
   providedIn: 'root'
 })
 export class LoginService {
-  private baseUrl = "http://zer0sense2.pythonanywhere.com/ws/";
+  private baseUrl = "https://zer0sense2.pythonanywhere.com/ws/";
 
   constructor(private http: HttpClient) { }
 
