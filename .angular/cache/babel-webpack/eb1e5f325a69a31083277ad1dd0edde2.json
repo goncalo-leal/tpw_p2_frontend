@@ -1,0 +1,1 @@
+{"ast":null,"code":"export class Publication_Topics {\n  constructor() {\n    this.enabled = true;\n  }\n\n}","map":null,"metadata":{},"sourceType":"module"}
