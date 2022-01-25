@@ -20,7 +20,7 @@ const httpOptions = {
 })
 export class PublicationService {
 
-  private baseUrl = 'http://127.0.0.1:7007/ws/';
+  private baseUrl = "http://zer0sense2.pythonanywhere.com/ws/";
   private user: User = new User;
   private status: Publication_Status = new Publication_Status;
 

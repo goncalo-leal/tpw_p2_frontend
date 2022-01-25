@@ -15,7 +15,7 @@ const httpOptions = {
   providedIn: 'root'
 })
 export class CommentsService {
-  private baseUrl = 'http://127.0.0.1:7007/ws/';
+  private baseUrl = "http://zer0sense2.pythonanywhere.com/ws/";
   constructor(private http: HttpClient) { }
 
   getComments( pub_id:number): Observable<Comment[]> {

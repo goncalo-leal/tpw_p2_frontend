@@ -7,7 +7,7 @@ import { Subject } from 'rxjs';
 })
 export class AuthenticationService {
   userId = new Subject<string | null>()
-  private baseUrl = 'http://127.0.0.1:7007/ws/';
+  private baseUrl = "http://zer0sense2.pythonanywhere.com/ws/";
   curentUserId = localStorage.getItem('user_id')
 
   constructor(private http: HttpClient) {

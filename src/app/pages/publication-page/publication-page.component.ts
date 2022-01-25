@@ -97,13 +97,25 @@ export class PublicationPageComponent implements OnInit {
     this.user.id=this.user_id
     this.user.username!=this.username
     fav.author=this.user
-    this.favoriteService.addFavorite(fav).subscribe();
-    window.location.reload();
+    this.favoriteService.addFavorite(fav).subscribe(
+      data => {
+        window.location.reload();
+      },
+      error => {
+
+      }
+    );
 
   }
   rmFav(){
-    this.favoriteService.deleteFavorite(this.fav).subscribe();
-    window.location.reload();
+    this.favoriteService.deleteFavorite(this.fav).subscribe(
+      data => {
+        window.location.reload();
+      },
+      error => {
+
+      }
+    );
   }
   getPublicationComments(){
     console.log("OLA")

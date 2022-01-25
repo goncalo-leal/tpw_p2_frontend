@@ -14,7 +14,7 @@ const httpOptions = {
 })
 export class UsersService {
 
-  private baseUrl = 'http://127.0.0.1:7007/ws/';
+  private baseUrl = "http://zer0sense2.pythonanywhere.com/ws/";
 
   constructor(private http: HttpClient) { }
 

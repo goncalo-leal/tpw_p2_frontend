@@ -20,7 +20,13 @@ export class CommentComponent implements OnInit {
 
   deleteComment(){
     console.log("DELETE")
-    this.commentSerice.deleteComment(this.comment).subscribe()
-    window.location.reload();
+    this.commentSerice.deleteComment(this.comment).subscribe(
+      data => {
+        window.location.reload();
+      },
+      error => {
+
+      }
+    );
   }
 }
